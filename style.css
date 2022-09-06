@@ -1,13 +1,13 @@
 body {
-    font-size: 14px;
+    font-size: 26px;
     line-height: 1.4;
     color: #000;
-    font-family: 'Circle';
+    font-family: 'Bradley Hand';
     font-weight: 400;
 }
 .nav {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .nav_link {
@@ -76,7 +76,7 @@ body {
 }
 
 .header_logo {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     color: white;
 }
@@ -152,4 +152,18 @@ body {
 .header_text_list li span {
     display: inline-block;
     margin-bottom: 15px;
+}
+
+.footer {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    float: left;
+    background-color: #504242;
+}
+
+.footer p {
+    color: white;
+    margin-top: 10px;
+    margin-left: 7em;
 }
