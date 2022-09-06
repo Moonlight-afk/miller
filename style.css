@@ -1,0 +1,155 @@
+body {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000;
+    font-family: 'Circle';
+    font-weight: 400;
+}
+.nav {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    transition: color .2s linear;
+    position: relative;
+}
+
+.nav_link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    display: none;
+    background-color: #be8350;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav_link:hover {
+    color: #be8350;
+}
+
+.nav_link:hover::after {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header_main {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    background-color: #272020;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    float: left;
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header_h1 {
+    right: 120px;
+    top: 100px;
+}
+
+.header_h1 {
+    position: absolute;
+    right: 100px;
+    top: 200px;
+    width: 470px;
+    color: white;
+}
+
+.header_h1 h1 {
+    line-height: 60px;
+    font-size: 56px;
+    color: #fff;
+    font-family: 'Circle';
+    font-weight: 300;
+}
+
+.header_info {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.header_text_box {
+    top: 110px;
+}
+
+.header_text_box {
+    opacity: 0;
+    animation: ani 2.5s forwards;
+}
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.header_text_box {
+    position: absolute;
+    transition: opacity 1s;
+    color: #B9B9B9;
+    z-index: 0;
+    font-size: 30px;
+}
+
+.header_text_list {
+    float: left;
+    width: 100%;
+    list-style: none;
+}
+
+.header_text_list li b {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.header_text_list li span {
+    display: inline-block;
+    margin-bottom: 15px;
+}
