@@ -4,6 +4,7 @@ body {
     color: #000;
     font-family: 'Bradley Hand';
     font-weight: 400;
+    height: 2000px;
 }
 .nav {
     text-transform: uppercase;
@@ -58,10 +59,11 @@ body {
 
 .header {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    background-color: #272020;
     z-index: 1000;
 }
 
