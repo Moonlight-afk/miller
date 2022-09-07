@@ -156,14 +156,20 @@ body {
 
 .footer {
     position: relative;
-    height: 50px;
+    height: 100px;
     width: 100%;
     float: left;
     background-color: #504242;
 }
 
-.footer p {
+.name_logo {
     color: white;
     margin-top: 10px;
     margin-left: 7em;
+}
+
+.adress {
+    color: white;
+    margin-left: 20em;
+    font-size: 16px;
 }
