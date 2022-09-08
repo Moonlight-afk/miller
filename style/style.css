@@ -220,6 +220,7 @@ body {
     padding: 15px 0px;
     transition: 0.2s;
     border-bottom: 1px solid rgba(109,109,109,0.3);
+    color: #000;
  }
 
  .box_input{
