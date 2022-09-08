@@ -4,8 +4,16 @@ body {
     color: #000;
     font-family: 'Bradley Hand';
     font-weight: 400;
-    height: 2000px;
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*--------------NAV*/
 .nav {
     text-transform: uppercase;
     font-size: 20px;
@@ -48,6 +56,9 @@ body {
     margin: 0 auto;
 }
 
+
+/*--------------HEADER*/
+
 .header_main {
     position: relative;
     height: 700px;
@@ -81,12 +92,6 @@ body {
     font-size: 36px;
     font-weight: 700;
     color: white;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
 }
 
 .header_h1 {
@@ -156,26 +161,7 @@ body {
     margin-bottom: 15px;
 }
 
-.footer {
-    position: relative;
-    height: 100px;
-    width: 100%;
-    float: left;
-    background-color: #504242;
-}
-
-.name_logo {
-    color: white;
-    margin-top: 10px;
-    margin-left: 7em;
-}
-
-.adress {
-    color: white;
-    margin-left: 20em;
-    font-size: 16px;
-}
-
+/*--------------CONSULTATION*/
 .consultation{
     float:left;
     background-color: white;
@@ -204,7 +190,11 @@ body {
     position: relative;
 }
 
-.input {
+/*.input {
+    background: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgba(109,109,109,0.3);
+    outline: none !important;
     margin: 10px;
     display: block;
     width: 60%;
@@ -216,8 +206,46 @@ body {
     line-height: 1.5;
     color: #212529;
     background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #bdbdbd;
     border-radius: 10px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}*/
+ .input {
+    float: left;
+    width: 100%;
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+    font-size: 16px;
+    color: #979797;
+    padding: 15px 0px;
+    transition: 0.2s;
+    border-bottom: 1px solid rgba(109,109,109,0.3);
+ }
+
+ .box_input{
+    width: 50%;
+    float: left;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+ }
+
+/*--------------FOOTER*/
+.footer {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    float: left;
+    background-color: #504242;
+}
+
+.name_logo {
+    color: white;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+
+.adress {
+    color: white;
+    margin-left: 20em;
+    font-size: 16px;
 }
