@@ -59,23 +59,33 @@
             <div class="container">
                 <div class="one_cons">
                     <div class="cons_text">
-                        <p>Первая бесплатная консультация</p>
+                        Первая бесплатная консультация
                     </div>
                     <div class="input_info">
                         <form method="POST" action="/">
-                            <input class="input" type="text",name="name" value placeholder="Ваше имя" required>
-                            <div class="box_input">
-                                <input class="input" id="call" type="text",name="phone" value placeholder="+7 (___)___-__-__" required>
+                            <div class="box">
+                                <div class="box_4">
+                                    <div class="box_input">
+                                        <input class="input" type="text",name="name" value placeholder="Ваше имя" required>
+                                    </div>
+                                    <div class="box_input">
+                                        <input class="input" id="call" type="text",name="phone" value placeholder="+7 (___)___-__-__" required>
+                                    </div>
+                                    <script src="https://unpkg.com/imask"></script>
+                                    <script src="js/maskPhone.js"></script>
+                                    <div class="box_input">
+                                        <input class="input" type="text",name="email" value placeholder="Электронная почта" required>
+                                    </div>
+                                    <div class="box_input">
+                                        <input class="input" type="text",name="problem" value placeholder="Опишите вашу проблему" required>
+                                    </div>
+                                </div>
+                                <div class="check">
+                                    <input required="" type="checkbox">
+                                    Нажимая кнопку "Отправить" Вы соглашаетесь с политикой обработки персональных данных;
+                                </div>
+                                <button class="button">Отправить</button>
                             </div>
-                            <script src="https://unpkg.com/imask"></script>
-                            <script src="js/maskPhone.js"></script>
-                            <div class="box_input">
-                                <input class="input" type="text",name="email" value placeholder="Электронная почта" required>
-                            </div>
-                            <div class="box_input">
-                                <input class="input" type="text",name="problem" value placeholder="Опишите вашу проблему" required>
-                            </div>
-                            <button>Отправить</button>
                         </form>
                         
                     </div>
