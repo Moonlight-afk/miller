@@ -3,6 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
         <link href="./style/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script defer src="./js/jquery.min.js"></script>
         <script defer src="./js/simple-adaptive-slider.js"></script>
@@ -56,28 +57,26 @@
                 </div>
             </div>
         </div>
-        <div class="slider">
-            <div class="container">
-                <div class="slider__wrapper">
-                    <div class="slider__items">
-                        <div class="slider__item">
-                            <div style="height: 250px; background: #3f51b5;"></div>
-                        </div>
-                        <div class="slider__item">
-                            <div style="height: 250px; background: #607d8b;"></div>
-                        </div>
-                        <div class="slider__item">
-                            <div style="height: 250px; background: #f44336;"></div>
-                        </div>
-                        <div class="slider__item">
-                            <div style="height: 250px; background: #4caf50;"></div>
-                        </div>
-                    </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./img/9R8A9185.jpg">
                 </div>
-                <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
-                <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+                <div class="swiper-slide">
+                    <img src="./img/9R8A9109.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/9R8A9124.jpg">
+                </div>
             </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <div class="consultation">
             <div class="container">
                 <div class="one_cons">

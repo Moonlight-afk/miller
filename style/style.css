@@ -353,119 +353,35 @@ button {
 
 /*--------------SLIDER*/
 
-/**
-  * SimpleAdaptiveSlider by itchief (https://github.com/itchief/ui-components/tree/master/simple-adaptive-slider)
-  * Copyright 2020 - 2022 Alexander Maltsev
-  * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
-  */
+.swiper {
+    width: 100%;
+    height: 600px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
 
-/* стили для корневого элемента слайдера */
-.slider {
-    position: relative;
-    max-width: 600px;
-    margin-right: auto;
-    margin-left: auto;
-}
-  
-  /* стили для wrapper */
-.slider__wrapper {
-    position: relative;
-    overflow: hidden;
-    background-color: #eee;
-}
-  
-  /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
-.slider__items {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    transition: transform 0.5s ease;
-    will-change: transform;
-}
-  
-  /* стили для элементов */
-.slider__item {
-    position: relative;
-    flex: 0 0 100%;
-    max-width: 100%;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    will-change: transform;
-}
-  
-.slider__btn_hide {
-    display: none;
-}
-  
-.slider__btn:hover,
-.slider__btn:focus {
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    opacity: 0.7;
-}
-  
-.slider__btn_prev {
-    left: 0;
-}
-  
-.slider__btn_next {
-    right: 0;
-}
-  
-.slider__btn::before {
-    content: "";
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    background: transparent no-repeat center center;
-    background-size: 100% 100%;
-}
-  
-.slider__btn_prev::before {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
-}
-  
-.slider__btn_next::before {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
-  
-  /* Индикаторы */
-.slider__indicators {
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-    left: 0;
-    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
-    margin: 0 15%;
-    padding-left: 0;
-    list-style: none;
-    user-select: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
-  
-.slider__indicator {
-    flex: 0 1 auto;
-    width: 30px;
-    height: 2px;
-    margin-right: 3px;
-    margin-left: 3px;
-    background-color: rgb(255 255 255 / 50%);
-    background-clip: padding-box;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    cursor: pointer;
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-  
-.slider__indicator_active {
-    background-color: #fff;
-}
-  
-  /* класс для отключения transition */
-.transition-none {
-    transition: none;
-}
-  
 
 /*--------------FOOTER*/
 .footer {
